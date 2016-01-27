@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5EC10AF-1E54-452B-AD49-7B1EA24B0011}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DesignPattern.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviourial\ChainOfResposibility.cs" />
+    <Compile Include="Behaviourial\Iterator.cs" />
+    <Compile Include="Behaviourial\Mediator.cs" />
+    <Compile Include="Behaviourial\Memento.cs" />
+    <Compile Include="Behaviourial\Observer.cs" />
+    <Compile Include="Behaviourial\State.cs" />
+    <Compile Include="Behaviourial\Strategy.cs" />
+    <Compile Include="Behaviourial\TemplateMethod.cs" />
+    <Compile Include="Behaviourial\Visitor.cs" />
+    <Compile Include="Creational\AbstractFactory.cs" />
+    <Compile Include="Creational\Builder.cs" />
+    <Compile Include="Creational\Factory.cs" />
+    <Compile Include="Creational\Prototype.cs" />
+    <Compile Include="Creational\Singleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter.cs" />
+    <Compile Include="Structural\Bridge.cs" />
+    <Compile Include="Structural\Composite.cs" />
+    <Compile Include="Structural\Decorator.cs" />
+    <Compile Include="Structural\Facade.cs" />
+    <Compile Include="Structural\Flyweight.cs" />
+    <Compile Include="Structural\Proxy.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="..\Readme.md">
+      <Link>Readme.md</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="Behaviourial\Class Diagrams\Visitor.cd" />
+    <None Include="Behaviourial\Class Diagrams\Strategy.cd" />
+    <None Include="Behaviourial\Class Diagrams\Observer.cd" />
+    <None Include="Behaviourial\Class Diagrams\TemplateMethod.cd" />
+    <None Include="Behaviourial\Class Diagrams\Iterator.cd" />
+    <None Include="Behaviourial\Class Diagrams\State.cd" />
+    <None Include="Behaviourial\Class Diagrams\ChainOfResponsibility.cd" />
+    <None Include="Behaviourial\Class Diagrams\Mediator.cd" />
+    <None Include="Behaviourial\Class Diagrams\Memento.cd" />
+    <None Include="Creational\Class Diagrams\AbstractFactory.cd" />
+    <None Include="Creational\Class Diagrams\Factory.cd" />
+    <None Include="Creational\Class Diagrams\Builder.cd" />
+    <None Include="Creational\Class Diagrams\Prototype.cd" />
+    <None Include="Creational\Class Diagrams\Singleton.cd" />
+    <None Include="Structural\Class Diagrams\Proxy.cd" />
+    <None Include="Structural\Class Diagrams\Flyweight.cd" />
+    <None Include="Structural\Class Diagrams\Facade.cd" />
+    <None Include="Structural\Class Diagrams\Decorator.cd" />
+    <None Include="Structural\Class Diagrams\Composite.cd" />
+    <None Include="Structural\Class Diagrams\Bridge.cd" />
+    <None Include="Structural\Class Diagrams\Adapter.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

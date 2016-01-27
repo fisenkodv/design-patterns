@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.XmlVisitor" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAEAAAQAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.TextVisitor" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.148" />
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Details">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Employee">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAEAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Address">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAEAAAAAIAAAAAAAAgAIAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Contact">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAIAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.VisitorProgram">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IVisitor">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviourial\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
