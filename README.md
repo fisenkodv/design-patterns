@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fisenkodv/designpatterns.svg?branch=master)](https://travis-ci.org/fisenkodv/designpatterns)
+
 INTRODUCTION
 ============
 Below you can find three basic classifications of patterns: Creational, Structural, and Behavioral.
