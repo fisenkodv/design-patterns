@@ -4,115 +4,116 @@ using System.Collections.Generic;
 
 namespace DesignPattern.Behaviourial
 {
-	public class MedicalEquipment
-	{
-		public string FriendlyName { get; private set; }
-		public string Product { get; private set; }
-		public string Manufacturer { get; private set; }
-		public string Model { get; private set; }
-		public string Version { get; private set; }
-		public long SerialNumber { get; private set; }
-		public long CatalogueNumber { get; private set; }
+  public class MedicalEquipment
+  {
+    public MedicalEquipment(string name, string product, string manufacturer, string model, string version,
+      long serialNumber, long catalogueNumber)
+    {
+      FriendlyName = name;
+      Product = product;
+      Manufacturer = manufacturer;
+      Model = model;
+      Version = version;
+      SerialNumber = serialNumber;
+      CatalogueNumber = catalogueNumber;
+    }
 
-		public MedicalEquipment(string name, string product, string manufacturer, string model, string version, long serialNumber, long catalogueNumber)
-		{
-			this.FriendlyName = name;
-			this.Product = product;
-			this.Manufacturer = manufacturer;
-			this.Model = model;
-			this.Version = version;
-			this.SerialNumber = serialNumber;
-			this.CatalogueNumber = catalogueNumber;
-		}
+    public string FriendlyName { get; }
+    public string Product { get; }
+    public string Manufacturer { get; }
+    public string Model { get; }
+    public string Version { get; }
+    public long SerialNumber { get; }
+    public long CatalogueNumber { get; }
 
-		public override string ToString()
-		{
-			string assetDescription = $"{this.FriendlyName}: [Product: {this.Product}, Manufacturer: {this.Manufacturer}, Model: {this.Model}, Version: {this.Version}, Serial Number: {this.SerialNumber}, Catalogue Number: {this.CatalogueNumber}";
-			return assetDescription;
-		}
-	}
+    public override string ToString()
+    {
+      string assetDescription =
+        $"{FriendlyName}: [Product: {Product}, Manufacturer: {Manufacturer}, Model: {Model}, Version: {Version}, Serial Number: {SerialNumber}, Catalogue Number: {CatalogueNumber}";
+      return assetDescription;
+    }
+  }
 
-	public class MedicalEquipmentCollection : IEnumerable<MedicalEquipment>, IDisposable
-	{
-		private Dictionary<string, List<MedicalEquipment>> _assetCollectionPerHospital = new Dictionary<string, List<MedicalEquipment>>();
+  public class MedicalEquipmentCollection : IEnumerable<MedicalEquipment>, IDisposable
+  {
+    private Dictionary<string, List<MedicalEquipment>> _assetCollectionPerHospital =
+      new Dictionary<string, List<MedicalEquipment>>();
 
-		#region IEnumerable<Asset> Members
+    #region IDisposable Members
 
-		public IEnumerator<MedicalEquipment> GetEnumerator()
-		{
-			foreach (string hospitalName in _assetCollectionPerHospital.Keys)
-			{
-				foreach (MedicalEquipment asset in _assetCollectionPerHospital[hospitalName])
-				{
-					yield return asset;
-				}
-			}
-		}
+    public void Dispose()
+    {
+      _assetCollectionPerHospital = null;
+    }
 
-		System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-		{
-			return (IEnumerator)GetEnumerator();
-		}
+    #endregion
 
-		#endregion
+    #region IEnumerable<Asset> Members
 
-		#region Public Members
+    public IEnumerator<MedicalEquipment> GetEnumerator()
+    {
+      foreach (var hospitalName in _assetCollectionPerHospital.Keys)
+        foreach (var asset in _assetCollectionPerHospital[hospitalName])
+          yield return asset;
+    }
 
-		public List<MedicalEquipment> this[string hospital]
-		{
-			get { return _assetCollectionPerHospital[hospital]; }
-		}
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+      return GetEnumerator();
+    }
 
-		public void AddAsset(string hospitalName, MedicalEquipment newAsset)
-		{
-			List<MedicalEquipment> assetCol;
-			if (!_assetCollectionPerHospital.TryGetValue(hospitalName, out assetCol))
-			{
-				assetCol = new List<MedicalEquipment>();
-				_assetCollectionPerHospital.Add(hospitalName, assetCol);
-			}
-			assetCol.Add(newAsset);
-		}
+    #endregion
 
-		public void ClearAssets()
-		{
-			_assetCollectionPerHospital.Clear();
-		}
+    #region Public Members
 
-		public int Count
-		{
-			get { return _assetCollectionPerHospital.Count; }
-		}
+    public List<MedicalEquipment> this[string hospital]
+    {
+      get { return _assetCollectionPerHospital[hospital]; }
+    }
 
-		#endregion
+    public void AddAsset(string hospitalName, MedicalEquipment newAsset)
+    {
+      List<MedicalEquipment> assetCol;
+      if (!_assetCollectionPerHospital.TryGetValue(hospitalName, out assetCol))
+      {
+        assetCol = new List<MedicalEquipment>();
+        _assetCollectionPerHospital.Add(hospitalName, assetCol);
+      }
+      assetCol.Add(newAsset);
+    }
 
-		#region IDisposable Members
+    public void ClearAssets()
+    {
+      _assetCollectionPerHospital.Clear();
+    }
 
-		public void Dispose()
-		{
-			_assetCollectionPerHospital = null;
-		}
+    public int Count
+    {
+      get { return _assetCollectionPerHospital.Count; }
+    }
 
-		#endregion
-	}
+    #endregion
+  }
 
-	public class IteratorProgram
-	{
-		public static void RunIterator()
-		{
-			using (MedicalEquipmentCollection assetCollection = new MedicalEquipmentCollection())
-			{
-				assetCollection.AddAsset("Manipal Hospital", new MedicalEquipment("CV1_Manipal", "Cadio Vascular (CV)", "Philips", "2012", "3.5", 110928, 123456789));
-				assetCollection.AddAsset("Manipal Hospital", new MedicalEquipment("XRAY1_Manipal", "XRAY", "Philips", "2011", "1.0", 110951, 987654321));
+  public class IteratorProgram
+  {
+    public static void RunIterator()
+    {
+      using (var assetCollection = new MedicalEquipmentCollection())
+      {
+        assetCollection.AddAsset("Manipal Hospital",
+          new MedicalEquipment("CV1_Manipal", "Cadio Vascular (CV)", "Philips", "2012", "3.5", 110928, 123456789));
+        assetCollection.AddAsset("Manipal Hospital",
+          new MedicalEquipment("XRAY1_Manipal", "XRAY", "Philips", "2011", "1.0", 110951, 987654321));
 
-				assetCollection.AddAsset("Fortis", new MedicalEquipment("CT1_Fortis", "Computer Tomography (CT)", "Philips", "2010", "2.0", 110934, 123456789));
-				assetCollection.AddAsset("Fortis", new MedicalEquipment("MR1_Fortis", "Mangetic Resonance (MR)", "Philips", "2012", "4.0", 123892, 182789252));
+        assetCollection.AddAsset("Fortis",
+          new MedicalEquipment("CT1_Fortis", "Computer Tomography (CT)", "Philips", "2010", "2.0", 110934, 123456789));
+        assetCollection.AddAsset("Fortis",
+          new MedicalEquipment("MR1_Fortis", "Mangetic Resonance (MR)", "Philips", "2012", "4.0", 123892, 182789252));
 
-				foreach (MedicalEquipment asset in assetCollection)
-				{
-					Console.WriteLine(asset.ToString());
-				}
-			}
-		}
-	}
+        foreach (var asset in assetCollection)
+          Console.WriteLine(asset.ToString());
+      }
+    }
+  }
 }

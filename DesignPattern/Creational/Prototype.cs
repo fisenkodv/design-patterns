@@ -2,67 +2,69 @@
 
 namespace DesignPattern.Creational
 {
-	public interface ICloneable<T>
-	{
-		T Clone();
-	}
+  public interface ICloneable<T>
+  {
+    T Clone();
+  }
 
-	public class DNASample : ICloneable<DNASample>
-	{
-		public string OwnerName { get; private set; }
-		public string Samples { get; private set; }
+  public class DnaSample : ICloneable<DnaSample>
+  {
+    public DnaSample(string owner, string samples)
+    {
+      OwnerName = owner;
+      Samples = samples;
+    }
 
-		public DNASample(string owner, string samples)
-		{
-			this.OwnerName = owner;
-			this.Samples = samples;
-		}
+    public string OwnerName { get; }
+    public string Samples { get; }
 
-		#region ICloneable Members
+    #region ICloneable Members
 
-		public DNASample Clone()
-		{
-			DNASample cloneDna = new DNASample(this.OwnerName, this.Samples);
-			return cloneDna;
-		}
+    public DnaSample Clone()
+    {
+      var cloneDna = new DnaSample(OwnerName, Samples);
+      return cloneDna;
+    }
 
-		#endregion
-	}
+    #endregion
+  }
 
-	public abstract class DNATest
-	{
-		public abstract void PerformTest(DNASample sampleOne, DNASample sampleTwo);
-	}
+  public abstract class DnaTest
+  {
+    public abstract void PerformTest(DnaSample sampleOne, DnaSample sampleTwo);
+  }
 
-	public class MitochondrialTest : DNATest
-	{
-		public override void PerformTest(DNASample sampleOne, DNASample sampleTwo)
-		{
-			Console.WriteLine("Performed mtDNA Test to check whether " + sampleOne.OwnerName + " and " + sampleTwo.OwnerName + " share a common ancester");
-		}
-	}
+  public class MitochondrialTest : DnaTest
+  {
+    public override void PerformTest(DnaSample sampleOne, DnaSample sampleTwo)
+    {
+      Console.WriteLine("Performed mtDNA Test to check whether " + sampleOne.OwnerName + " and " + sampleTwo.OwnerName +
+                        " share a common ancester");
+    }
+  }
 
-	public class PaternityTest : DNATest
-	{
-		public override void PerformTest(DNASample sampleOne, DNASample sampleTwo)
-		{
-			Console.WriteLine("Performed Y-Chromosome Test to check whether  " + sampleOne.OwnerName + " and " + sampleTwo.OwnerName + " having father-child relationship");
-		}
-	}
+  public class PaternityTest : DnaTest
+  {
+    public override void PerformTest(DnaSample sampleOne, DnaSample sampleTwo)
+    {
+      Console.WriteLine("Performed Y-Chromosome Test to check whether  " + sampleOne.OwnerName + " and " +
+                        sampleTwo.OwnerName + " having father-child relationship");
+    }
+  }
 
-	public class PrototypeProgram
-	{
-		public static void RunPrototype()
-		{
-			DNASample sampleOne = new DNASample("Bill", "ACTGAGTCGTCA");
-			DNASample sampleTwo = new DNASample("Steve", "GTACAGTCATGG");
-			DNASample sampleThree = new DNASample("Linus", "CGTAAAGTGCTT");
+  public class PrototypeProgram
+  {
+    public static void RunPrototype()
+    {
+      var sampleOne = new DnaSample("Bill", "ACTGAGTCGTCA");
+      var sampleTwo = new DnaSample("Steve", "GTACAGTCATGG");
+      var sampleThree = new DnaSample("Linus", "CGTAAAGTGCTT");
 
-			DNATest dnaTestObject = new MitochondrialTest();
-			dnaTestObject.PerformTest(sampleOne.Clone(), sampleTwo.Clone());
+      DnaTest dnaTestObject = new MitochondrialTest();
+      dnaTestObject.PerformTest(sampleOne.Clone(), sampleTwo.Clone());
 
-			dnaTestObject = new PaternityTest();
-			dnaTestObject.PerformTest(sampleOne.Clone(), sampleThree.Clone());
-		}
-	}
+      dnaTestObject = new PaternityTest();
+      dnaTestObject.PerformTest(sampleOne.Clone(), sampleThree.Clone());
+    }
+  }
 }
