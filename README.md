@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/fisenkodv/designpatterns.svg?branch=master)](https://travis-ci.org/fisenkodv/designpatterns)
+[![Build status](https://ci.appveyor.com/api/projects/status/tjcbww58vosfk298?svg=true)](https://ci.appveyor.com/project/fisenkodv/designpatterns)
 
 INTRODUCTION
 ============
