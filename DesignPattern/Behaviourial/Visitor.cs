@@ -12,15 +12,15 @@ namespace DesignPattern.Behaviourial
   {
     public void Visit(Details details)
     {
-      if (details is Employee)
-        EmployeeToXml(details as Employee);
-      else if (details is Address)
-        AddressToXml(details as Address);
-      else if (details is Contact)
-        ContactToXml(details as Contact);
+      if (details is Employee employee)
+        EmployeeToXml(employee);
+      else if (details is Address address)
+        AddressToXml(address);
+      else if (details is Contact contact)
+        ContactToXml(contact);
     }
 
-    private void EmployeeToXml(Employee employee)
+    private static void EmployeeToXml(Employee employee)
     {
       var element = new XElement("Employee",
         new XElement("Name", employee.Name),
@@ -31,7 +31,7 @@ namespace DesignPattern.Behaviourial
       Console.WriteLine(element.ToString());
     }
 
-    private void AddressToXml(Address address)
+    private static void AddressToXml(Address address)
     {
       var element = new XElement("Address",
         new XElement("Building", address.Building),
@@ -41,7 +41,7 @@ namespace DesignPattern.Behaviourial
       Console.WriteLine(element.ToString());
     }
 
-    private void ContactToXml(Contact contact)
+    private static void ContactToXml(Contact contact)
     {
       var element = new XElement("Contact",
         new XElement("Mobile", contact.Mobile),
@@ -56,27 +56,27 @@ namespace DesignPattern.Behaviourial
   {
     public void Visit(Details details)
     {
-      if (details is Employee)
-        EmployeeToText(details as Employee);
-      else if (details is Address)
-        AddressToText(details as Address);
-      else if (details is Contact)
-        ContactToText(details as Contact);
+      if (details is Employee employee)
+        EmployeeToText(employee);
+      else if (details is Address address)
+        AddressToText(address);
+      else if (details is Contact contact)
+        ContactToText(contact);
     }
 
-    private void EmployeeToText(Employee employee)
+    private static void EmployeeToText(Employee employee)
     {
       Console.WriteLine("Employee: [Name: {0}, Number:{1}, Designation: {2}, Department: {3}]", employee.Name,
         employee.RegNumber, employee.Designation, employee.Department);
     }
 
-    private void AddressToText(Address address)
+    private static void AddressToText(Address address)
     {
       Console.WriteLine("Address: [Building: {0}, City: {1}, Country: {2}]", address.Building, address.City,
         address.Country);
     }
 
-    private void ContactToText(Contact contact)
+    private static void ContactToText(Contact contact)
     {
       Console.WriteLine("Contact: [Mobile: {0}, Office:{1}, Fax: {2}]", contact.Mobile, contact.Office, contact.Fax);
     }

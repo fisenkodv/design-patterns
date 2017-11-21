@@ -20,7 +20,7 @@ namespace DesignPattern.Structural
 
     public void PayFund(float amount)
     {
-      string response =
+      var response =
         $"Paid to Mr./Mrs./Miss. {RecepientName} Amount INR. {amount}/- [From A/C: {AccoutnNumber}, Bank: {BankName}] On date of {PaymentDate.ToString(CultureInfo.InvariantCulture)}";
 
       Console.WriteLine(response);

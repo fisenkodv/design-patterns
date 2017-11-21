@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="StudyDesignPattern.Structural.MyRemoteDestopWrapper" BaseTypeListCollapsed="true">
-    <Position X="2" Y="1.5" Width="2.75" />
+  <Class Name="DesignPattern.Structural.MyRemoteDesktopWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAABAAAAAAAQAAAAAAAAACAAA=</HashCode>
-      <FileName>Structural\Adapter.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="StudyDesignPattern.Structural.RealVNCRemoteDesktopAdapter" BaseTypeListCollapsed="true">
-    <Position X="8" Y="1.5" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAABAAAAAACQAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAACAABAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Adapter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="StudyDesignPattern.Structural.RealVNCRemoteDesktopWrapper" BaseTypeListCollapsed="true">
-    <Position X="5.25" Y="1.5" Width="2.5" />
+  <Class Name="DesignPattern.Structural.RealVncRemoteDesktopAdapter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAIAAAACAABAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Adapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DesignPattern.Structural.RealVncRemoteDesktopWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAgAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Adapter.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="StudyDesignPattern.Structural.AdapterProgram">
-    <Position X="13.5" Y="1.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.AdapterProgram" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Adapter.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="StudyDesignPattern.Structural.IMyRemoteDesktop">
-    <Position X="5" Y="3.75" Width="1.75" />
+  <Interface Name="DesignPattern.Structural.IMyRemoteDesktop" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAIAAAAAAABAAAAAAAQAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAACAABAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Adapter.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="StudyDesignPattern.Structural.IRealVNCRemoteDesktop">
-    <Position X="7" Y="4.25" Width="2" />
+  <Interface Name="DesignPattern.Structural.IRealVncRemoteDesktop" Collapsed="true">
+    <Position X="4.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAgAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Adapter.cs</FileName>

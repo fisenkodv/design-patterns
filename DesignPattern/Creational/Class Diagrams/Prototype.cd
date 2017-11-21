@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.DNASample" BaseTypeListCollapsed="true">
-    <Position X="5.25" Y="2" Width="1.5" />
+  <Class Name="DesignPattern.Creational.DnaSample" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAAAAABA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.DNATest">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.DnaTest" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.MitochondrialTest">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.MitochondrialTest" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.PaternityTest">
-    <Position X="3" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.PaternityTest" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.PrototypeProgram">
-    <Position X="1.5" Y="4.5" Width="1.75" />
+  <Class Name="DesignPattern.Creational.PrototypeProgram" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Creational.ICloneable&lt;T&gt;">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Creational.ICloneable&lt;T&gt;" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Creational\Prototype.cs</FileName>

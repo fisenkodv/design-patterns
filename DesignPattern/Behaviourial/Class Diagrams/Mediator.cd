@@ -1,36 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Messenger" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Messenger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAEA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Behaviourial\Mediator.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="_Persons" />
-    </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.ChatPerson" BaseTypeListCollapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.ChatPerson" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAAAAAAgCAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgCAAgAQAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Mediator.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Messenger" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.MediatorProgram">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.MediatorProgram" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Mediator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IMessenger">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Behaviourial.IMessenger" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
       <FileName>Behaviourial\Mediator.cs</FileName>

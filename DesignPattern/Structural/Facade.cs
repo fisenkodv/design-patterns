@@ -21,8 +21,7 @@ namespace DesignPattern.Structural
 
     public string GetDetails()
     {
-      return string.Format("Product Name: {0}, Brand: {1}, Quantity: {2}, Price: {3}",
-        Name, Brand, Quantity, Price);
+      return $"Product Name: {Name}, Brand: {Brand}, Quantity: {Quantity}, Price: {Price}";
     }
   }
 

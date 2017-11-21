@@ -1,70 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.WhatType">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.WhatType" Collapsed="true">
+    <Position X="13" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.Hyundai">
-    <Position X="5" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.Hyundai" Collapsed="true">
+    <Position X="6" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAEAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAEAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.Santro">
-    <Position X="7.25" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Creational.Santro" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.I10">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Creational.I10" Collapsed="true">
+    <Position X="1.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.I20">
-    <Position X="2.75" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Creational.I20" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.Verna">
-    <Position X="5" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Creational.Verna" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.Sonata">
-    <Position X="9.5" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Creational.Sonata" Collapsed="true">
+    <Position X="10.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAIAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAAgAAAAAAAAAAgwAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.HyundaiFactory">
-    <Position X="7.75" Y="0.5" Width="1.75" />
+  <Class Name="DesignPattern.Creational.HyundaiFactory" Collapsed="true">
+    <Position X="14.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Creational.FactoryProgram">
-    <Position X="10" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Creational.FactoryProgram" Collapsed="true">
+    <Position X="13" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="LearningMahesh.StudyDesignPattern.Creational.HyundaiCars">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+  <Enum Name="DesignPattern.Creational.HyundaiCars" Collapsed="true">
+    <Position X="13" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAABAIAAAAAAAAAgAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Creational\Factory.cs</FileName>

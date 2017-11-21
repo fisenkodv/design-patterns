@@ -1,34 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Asset">
-    <Position X="6.75" Y="0.5" Width="1.75" />
+  <Class Name="DesignPattern.Behaviourial.MedicalEquipment" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAgCAAAAAAAAAAgEAAAAAAAAAAEAAAAAAAgQAAAAAAA=</HashCode>
       <FileName>Behaviourial\Iterator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.AssetCollection" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="0.75" Width="2.25" />
+  <Class Name="DesignPattern.Behaviourial.MedicalEquipmentCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ASAAQAAAACAAABAACAAAAAQAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAQAAAACAAABAACAAAAAQAAAABAAAEAAAAAgAAAAA=</HashCode>
       <FileName>Behaviourial\Iterator.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="_AssetCollectionPerHospital" />
-    </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.IteratorProgram">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.IteratorProgram" Collapsed="true">
+    <Position X="1.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Iterator.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
-    <Position X="4.75" Y="1.25" Width="1.5" />
-    <TypeIdentifier />
-    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

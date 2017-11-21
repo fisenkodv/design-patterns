@@ -72,9 +72,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="..\Readme.md">
-      <Link>Readme.md</Link>
-    </None>
     <None Include="app.config" />
     <None Include="Behaviourial\Class Diagrams\Visitor.cd" />
     <None Include="Behaviourial\Class Diagrams\Strategy.cd" />

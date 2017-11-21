@@ -6,8 +6,14 @@ namespace DesignPattern.Behaviourial
 {
   public class MedicalEquipment
   {
-    public MedicalEquipment(string name, string product, string manufacturer, string model, string version,
-      long serialNumber, long catalogueNumber)
+    public MedicalEquipment(
+      string name,
+      string product,
+      string manufacturer,
+      string model,
+      string version,
+      long serialNumber,
+      long catalogueNumber)
     {
       FriendlyName = name;
       Product = product;
@@ -28,7 +34,7 @@ namespace DesignPattern.Behaviourial
 
     public override string ToString()
     {
-      string assetDescription =
+      var assetDescription =
         $"{FriendlyName}: [Product: {Product}, Manufacturer: {Manufacturer}, Model: {Model}, Version: {Version}, Serial Number: {SerialNumber}, Catalogue Number: {CatalogueNumber}";
       return assetDescription;
     }
@@ -39,22 +45,20 @@ namespace DesignPattern.Behaviourial
     private Dictionary<string, List<MedicalEquipment>> _assetCollectionPerHospital =
       new Dictionary<string, List<MedicalEquipment>>();
 
-    #region IDisposable Members
-
     public void Dispose()
     {
       _assetCollectionPerHospital = null;
     }
 
-    #endregion
-
-    #region IEnumerable<Asset> Members
-
     public IEnumerator<MedicalEquipment> GetEnumerator()
     {
       foreach (var hospitalName in _assetCollectionPerHospital.Keys)
+      {
         foreach (var asset in _assetCollectionPerHospital[hospitalName])
+        {
           yield return asset;
+        }
+      }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -62,19 +66,11 @@ namespace DesignPattern.Behaviourial
       return GetEnumerator();
     }
 
-    #endregion
-
-    #region Public Members
-
-    public List<MedicalEquipment> this[string hospital]
-    {
-      get { return _assetCollectionPerHospital[hospital]; }
-    }
+    public List<MedicalEquipment> this[string hospital] => _assetCollectionPerHospital[hospital];
 
     public void AddAsset(string hospitalName, MedicalEquipment newAsset)
     {
-      List<MedicalEquipment> assetCol;
-      if (!_assetCollectionPerHospital.TryGetValue(hospitalName, out assetCol))
+      if (!_assetCollectionPerHospital.TryGetValue(hospitalName, out var assetCol))
       {
         assetCol = new List<MedicalEquipment>();
         _assetCollectionPerHospital.Add(hospitalName, assetCol);
@@ -87,12 +83,7 @@ namespace DesignPattern.Behaviourial
       _assetCollectionPerHospital.Clear();
     }
 
-    public int Count
-    {
-      get { return _assetCollectionPerHospital.Count; }
-    }
-
-    #endregion
+    public int Count => _assetCollectionPerHospital.Count;
   }
 
   public class IteratorProgram

@@ -87,7 +87,8 @@ namespace DesignPattern.Behaviourial
     {
       CustomerName = customerName;
       AccountState = new BronzeState(1000.0, this);
-      Console.WriteLine(CustomerName + " Opend Account with Deposit RS." + AccountState.Balance + "/-. Account State: " +
+      Console.WriteLine(CustomerName + " Opend Account with Deposit RS." + AccountState.Balance +
+                        "/-. Account State: " +
                         AccountState.StateName);
     }
 
@@ -114,12 +115,12 @@ namespace DesignPattern.Behaviourial
                         AccountState.StateName);
     }
 
-    public void PayIntrest(double percentage)
+    public void PayInterest(double percentage)
     {
-      AccountState.Balance += AccountState.Balance*percentage*100.0;
+      AccountState.Balance += AccountState.Balance * percentage * 100.0;
       AccountState.EnsureState();
 
-      Console.WriteLine("Bank paid intrest of " + percentage + "%");
+      Console.WriteLine("Bank paid interest of " + percentage + "%");
       Console.WriteLine("Total Account Balance: RS." + AccountState.Balance + "/-. Account State: " +
                         AccountState.StateName);
     }
@@ -134,7 +135,7 @@ namespace DesignPattern.Behaviourial
       linus.Deposit(20000000.0);
 
       linus.Withdraw(2055000.0);
-      linus.PayIntrest(10.0);
+      linus.PayInterest(10.0);
     }
   }
 }

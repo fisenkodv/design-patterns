@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.Pizza" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Structural.Pizza" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Decorator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DesignPattern.Structural.PizzaToppings" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.PizzaTopings">
-    <Position X="2.75" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAABEAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Structural\Decorator.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.ExtraSoya">
-    <Position X="0.75" Y="3.25" Width="1.5" />
+  <Class Name="DesignPattern.Structural.ExtraSoya" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.ExtraCheese">
-    <Position X="2.75" Y="3.25" Width="1.5" />
+  <Class Name="DesignPattern.Structural.ExtraCheese" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.ExtraTomatoAndOnion">
-    <Position X="4.75" Y="3.25" Width="1.5" />
+  <Class Name="DesignPattern.Structural.ExtraTomatoAndOnion" Collapsed="true">
+    <Position X="7.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.DecoratorProgram">
-    <Position X="9.75" Y="2" Width="1.5" />
+  <Class Name="DesignPattern.Structural.DecoratorProgram" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Structural.IPizza">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Structural.IPizza" Collapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Decorator.cs</FileName>

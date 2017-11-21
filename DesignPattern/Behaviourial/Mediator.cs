@@ -27,8 +27,12 @@ namespace DesignPattern.Behaviourial
     public void Send(string message, ChatPerson originator)
     {
       foreach (var person in _persons)
+      {
         if (person != originator)
+        {
           person.ReceiveMessage(message, originator);
+        }
+      }
     }
   }
 
@@ -46,7 +50,7 @@ namespace DesignPattern.Behaviourial
 
     public bool Equals(ChatPerson other)
     {
-      return Name.Equals(other.Name);
+      return Name.Equals(other?.Name);
     }
 
     public void SendMessage(string message)

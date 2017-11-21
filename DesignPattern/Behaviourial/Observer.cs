@@ -31,10 +31,10 @@ namespace DesignPattern.Behaviourial
 
     public void Update(IStock stock)
     {
-      var stockObj = stock as Stock;
-      if (null != stockObj)
-        Console.WriteLine("Notified: {0}[Trading ID #{1}] Of {2} changed to {3:C}", Name, Id, stockObj.Symbol,
-          stockObj.Price);
+      if (stock is Stock stockObj)
+      {
+        Console.WriteLine($"Notified: {Name}[Trading ID #{Id}] Of {stockObj.Symbol} changed to {stockObj.Price:C}");
+      }
     }
   }
 
@@ -53,7 +53,7 @@ namespace DesignPattern.Behaviourial
 
     public double Price
     {
-      get { return _price; }
+      get => _price;
       set
       {
         _price = value;
@@ -75,7 +75,9 @@ namespace DesignPattern.Behaviourial
     public void Notify()
     {
       foreach (var investor in _investors)
+      {
         investor.Update(this);
+      }
     }
   }
 
@@ -87,19 +89,19 @@ namespace DesignPattern.Behaviourial
       IInvestor bill = new Investor(101, "Bill Gates");
       IInvestor james = new Investor(102, "James Gosling");
 
-      IStock philipsStock = new Stock("Apple Inc.", 1000.0);
-      philipsStock.Register(steve);
-      philipsStock.Register(bill);
+      IStock aaplStock = new Stock("Apple Inc.", 1000.0);
+      aaplStock.Register(steve);
+      aaplStock.Register(bill);
 
-      IStock aluStock = new Stock("Microsoft Corp.", 500.0);
-      aluStock.Register(steve);
-      aluStock.Register(james);
+      IStock msftStock = new Stock("Microsoft Corp.", 500.0);
+      msftStock.Register(steve);
+      msftStock.Register(james);
 
-      philipsStock.Price += 2.0;
-      aluStock.Price += 3.5;
+      aaplStock.Price += 2.0;
+      msftStock.Price += 3.5;
 
-      philipsStock.Price -= 0.7;
-      aluStock.Price -= 1.4;
+      aaplStock.Price -= 0.7;
+      msftStock.Price -= 1.4;
     }
   }
 }

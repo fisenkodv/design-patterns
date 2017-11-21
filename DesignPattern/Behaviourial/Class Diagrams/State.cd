@@ -1,48 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.State">
-    <Position X="3" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.State" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAQAAAAAQAgAAAAAAAAAAAAAAAAAAAEAAEA=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Account" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.BronzeState">
-    <Position X="3" Y="3.5" Width="1.75" />
+  <Class Name="DesignPattern.Behaviourial.BronzeState" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.SilverState">
-    <Position X="5.5" Y="3.5" Width="1.75" />
+  <Class Name="DesignPattern.Behaviourial.SilverState" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.GoldState">
-    <Position X="0.5" Y="3.5" Width="1.75" />
+  <Class Name="DesignPattern.Behaviourial.GoldState" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Account">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Account" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAACAEQEAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEQEAAAAAAQAAAAAAAAAI=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="AccountState" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.StateProgram">
-    <Position X="9.75" Y="1" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.StateProgram" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\State.cs</FileName>

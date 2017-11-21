@@ -1,40 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Investor" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Investor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Observer.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Stock" BaseTypeListCollapsed="true">
-    <Position X="3.5" Y="3" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Stock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAQAAAAAAAgIAAAAAAAABAABAAAAAAAAAGAA=</HashCode>
+      <HashCode>AgAAAAAAAQAAAAAAAAAAAAAAAAABAABAAAIAAAAAGAA=</HashCode>
       <FileName>Behaviourial\Observer.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="_Investors" />
-    </ShowAsCollectionAssociation>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.ObserverProgram">
-    <Position X="6" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.ObserverProgram" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Observer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IStock">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Behaviourial.IStock" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAABAABAAAAAAAAAGAA=</HashCode>
       <FileName>Behaviourial\Observer.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IInvestor">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Behaviourial.IInvestor" Collapsed="true">
+    <Position X="4.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Observer.cs</FileName>

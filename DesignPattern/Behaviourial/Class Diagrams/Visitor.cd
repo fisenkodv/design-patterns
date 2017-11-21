@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.XmlVisitor" BaseTypeListCollapsed="true">
-    <Position X="9" Y="2" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.XmlVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAEAAAQAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.TextVisitor" BaseTypeListCollapsed="true">
-    <Position X="7" Y="2" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.TextVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQBAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="1.148" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Details">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Details" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Employee">
-    <Position X="2.75" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Employee" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAQAEAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Address">
-    <Position X="5" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Address" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAEAAAAAIAAAAAAAAgAIAAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Contact">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Contact" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAAAAAAAAAAAIAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.VisitorProgram">
-    <Position X="8" Y="4.25" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.VisitorProgram" Collapsed="true">
+    <Position X="11.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IVisitor">
-    <Position X="8" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Behaviourial.IVisitor" Collapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Visitor.cs</FileName>

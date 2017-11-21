@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.Product">
-    <Position X="0.5" Y="1.25" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPattern.Structural.Product" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAEAAAAAgAABAAA=</HashCode>
       <FileName>Structural\Facade.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.PaymentGateway">
-    <Position X="6.5" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.PaymentGateway" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAgAAAAAABAAAAAAAAI=</HashCode>
       <FileName>Structural\Facade.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.BillInvoice">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Structural.BillInvoice" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Structural\Facade.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.OrderFacade">
-    <Position X="3.75" Y="1.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.OrderFacade" Collapsed="true">
+    <Position X="4" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACIAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEAAAAAAACIAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Structural\Facade.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Invoice" />
-      <Field Name="_Payment" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Field Name="_ProductsInCart" />
-    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DesignPattern.Structural.FacadeProgram" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

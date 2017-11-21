@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DesignPattern.Creational
 {
-  [AttributeUsage( AttributeTargets.Field )]
+  [AttributeUsage(AttributeTargets.Field)]
   public class WhatType : Attribute
   {
     public Type TypeOf;
@@ -12,16 +12,11 @@ namespace DesignPattern.Creational
 
   public enum HyundaiCars
   {
-    [WhatType( TypeOf = typeof( Santro ) )]
-    SantroCar,
-    [WhatType( TypeOf = typeof( I10 ) )]
-    I10Car,
-    [WhatType( TypeOf = typeof( I20 ) )]
-    I20Car,
-    [WhatType( TypeOf = typeof( Verna ) )]
-    VernaCar,
-    [WhatType( TypeOf = typeof( Sonata ) )]
-    SonataCar
+    [WhatType(TypeOf = typeof(Santro))] SantroCar,
+    [WhatType(TypeOf = typeof(I10))] I10Car,
+    [WhatType(TypeOf = typeof(I20))] I20Car,
+    [WhatType(TypeOf = typeof(Verna))] VernaCar,
+    [WhatType(TypeOf = typeof(Sonata))] SonataCar
   }
 
   public abstract class Hyundai
@@ -118,30 +113,30 @@ namespace DesignPattern.Creational
   {
     private readonly Dictionary<HyundaiCars, Hyundai> _carMapDictionary = new Dictionary<HyundaiCars, Hyundai>();
 
-    public Hyundai GetCar( HyundaiCars carType )
+    public Hyundai GetCar(HyundaiCars carType)
     {
       Hyundai hyundai = null;
 
       /* Use Reflection to make job easy */
-      var memberInfo = typeof( HyundaiCars ).GetMember( carType.ToString() ).FirstOrDefault();
-      if ( memberInfo != null )
+      var memberInfo = typeof(HyundaiCars).GetMember(carType.ToString()).FirstOrDefault();
+      if (memberInfo != null)
       {
-        var whatType = (WhatType)memberInfo
-          .GetCustomAttributes( typeof( WhatType ), true )
+        var whatType = (WhatType) memberInfo
+          .GetCustomAttributes(typeof(WhatType), true)
           .FirstOrDefault();
 
-        if ( null != whatType )
+        if (null != whatType)
         {
-          if ( !_carMapDictionary.TryGetValue( carType, out hyundai ) )
+          if (!_carMapDictionary.TryGetValue(carType, out hyundai))
           {
-            hyundai = (Hyundai)Activator.CreateInstance( whatType.TypeOf );
-            _carMapDictionary.Add( carType, hyundai );
+            hyundai = (Hyundai) Activator.CreateInstance(whatType.TypeOf);
+            _carMapDictionary.Add(carType, hyundai);
           }
           return hyundai;
         }
       }
       //--- Alternate Approach (Simple Switch Case)---
-      switch ( carType )
+      switch (carType)
       {
         case HyundaiCars.SantroCar:
           hyundai = new Santro();
@@ -169,11 +164,11 @@ namespace DesignPattern.Creational
     {
       var factory = new HyundaiFactory();
 
-      var hyundai = factory.GetCar( HyundaiCars.VernaCar );
-      Console.WriteLine( hyundai.ToString() );
+      var hyundai = factory.GetCar(HyundaiCars.VernaCar);
+      Console.WriteLine(hyundai.ToString());
 
-      hyundai = factory.GetCar( HyundaiCars.I20Car );
-      Console.WriteLine( hyundai.ToString() );
+      hyundai = factory.GetCar(HyundaiCars.I20Car);
+      Console.WriteLine(hyundai.ToString());
     }
   }
 }

@@ -1,56 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.ReImbursement">
-    <Position X="8" Y="0.5" Width="1.75" />
+  <Class Name="DesignPattern.Behaviourial.ReImbursement" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIIAAAAAAAAAAIAAAABAACAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAIAAAAAAAAAAIAAAABAACAAAAAAAACAAAAAAACAEA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="ApprovedLevel" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Approver">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Approver" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAgAAAAAEAAAACAAAAAAAAIAAAIAAAABAAAAAAIAAAA=</HashCode>
+      <HashCode>AAgAAQAAAAAAACAAAAAAAQIAAAIAAAABAgAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="NextEsculation" />
-      <Property Name="Level" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Manager">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Manager" Collapsed="true">
+    <Position X="1.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.SeniorManager">
-    <Position X="2.75" Y="4.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.SeniorManager" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Director">
-    <Position X="5" Y="4.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Director" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.ChainOfResponsibilityProgram">
-    <Position X="7.5" Y="3.5" Width="2.75" />
+  <Class Name="DesignPattern.Behaviourial.ChainOfResponsibilityProgram" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="LearningMahesh.StudyDesignPattern.Behaviourial.ApproveLevel">
-    <Position X="5" Y="0.5" Width="1.5" />
+  <Enum Name="DesignPattern.Behaviourial.ApproveLevel" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAEAAAA=</HashCode>
       <FileName>Behaviourial\ChainOfResposibility.cs</FileName>

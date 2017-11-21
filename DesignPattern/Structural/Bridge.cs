@@ -5,7 +5,6 @@ namespace DesignPattern.Structural
   public interface ITelevision
   {
     string BrandName { get; }
-
     void SwitchOn();
     void SwitchOff();
     void TuneChannel(int channel);
@@ -18,10 +17,7 @@ namespace DesignPattern.Structural
       Console.WriteLine("Invoked " + BrandName);
     }
 
-    public string BrandName
-    {
-      get { return "Sony"; }
-    }
+    public string BrandName => "Sony";
 
     public void SwitchOn()
     {
@@ -46,10 +42,7 @@ namespace DesignPattern.Structural
       Console.WriteLine("Invoked " + BrandName);
     }
 
-    public string BrandName
-    {
-      get { return "Philips"; }
-    }
+    public string BrandName => "Philips";
 
     public void SwitchOn()
     {

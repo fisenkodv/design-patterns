@@ -1,47 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.SonyTV" BaseTypeListCollapsed="true">
-    <Position X="3" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.SonyTv" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAhAAAAAAAAAAAAAAAAAABAAAAAAAABAAA=</HashCode>
       <FileName>Structural\Bridge.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.PhilipsTV" BaseTypeListCollapsed="true">
-    <Position X="1" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.PhilipsTv" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAhAAAAAAAAAAAAAAAAAABAAAAAAAABAAA=</HashCode>
       <FileName>Structural\Bridge.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="1.158" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.RemoteControl">
-    <Position X="5.5" Y="0.5" Width="1.75" />
+  <Class Name="DesignPattern.Structural.RemoteControl" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAAAAAIg=</HashCode>
-      <FileName>Structural\Bridge.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Television" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.RemoteController">
-    <Position X="5.5" Y="2.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAAAAg=</HashCode>
+      <HashCode>AAAAAIAAAAAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAIg=</HashCode>
       <FileName>Structural\Bridge.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.ProgramBridge">
-    <Position X="7.75" Y="2.25" Width="1.5" />
+  <Class Name="DesignPattern.Structural.RemoteController" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAYAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Structural\Bridge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPattern.Structural.BridgeProgram" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Bridge.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Structural.ITelevision">
-    <Position X="2" Y="0.5" Width="1.5" />
+  <Interface Name="DesignPattern.Structural.ITelevision" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAhAAAAAAAAAAAAAAAAAABAAAAAAAABAAA=</HashCode>
       <FileName>Structural\Bridge.cs</FileName>

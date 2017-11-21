@@ -1,59 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.Payment" BaseTypeListCollapsed="true">
-    <Position X="2" Y="2.25" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DesignPattern.Structural.Payment" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAEAAAAAEAAAAAAAAABAECAAgBCAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAECAAABCAAAAAAAA=</HashCode>
       <FileName>Structural\Proxy.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="1.3" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.CheckProxy" BaseTypeListCollapsed="true">
-    <Position X="5.5" Y="2.25" Width="1.5" />
-    <AssociationLine Name="_Payment" Type="LearningMahesh.StudyDesignPattern.Structural.Payment">
-      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="0.11" Y="0.06" Height="0.182" Width="0.955" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="DesignPattern.Structural.CheckProxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAAAI=</HashCode>
       <FileName>Structural\Proxy.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Payment" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.2" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.OnlineFundTransfer" BaseTypeListCollapsed="true">
-    <Position X="3.75" Y="2.25" Width="1.5" />
-    <AssociationLine Name="_Payment" Type="LearningMahesh.StudyDesignPattern.Structural.Payment" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="5.062" Y="3.997" />
-        <Point X="5.062" Y="4.312" />
-        <Point X="3.5" Y="4.312" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
-        <Position X="0.11" Y="0.06" Height="0.182" Width="1.16" />
-      </MemberNameLabel>
-    </AssociationLine>
+  <Class Name="DesignPattern.Structural.OnlineFundTransfer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAKAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Proxy.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="_Payment" />
-    </ShowAsAssociation>
-    <Lollipop Position="0.742" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Structural.ProxyProgram">
-    <Position X="7.75" Y="1.75" Width="1.5" />
+  <Class Name="DesignPattern.Structural.ProxyProgram" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Proxy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Structural.IPayment">
-    <Position X="3.25" Y="0.75" Width="2.75" />
+  <Interface Name="DesignPattern.Structural.IPayment" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Structural\Proxy.cs</FileName>

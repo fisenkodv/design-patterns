@@ -11,7 +11,7 @@ namespace DesignPattern.Structural
     void CloseConnection();
   }
 
-  public class MyRemoteDestopWrapper : IMyRemoteDesktop
+  public class MyRemoteDesktopWrapper : IMyRemoteDesktop
   {
     public string IpAddress { get; set; }
 
@@ -84,7 +84,7 @@ namespace DesignPattern.Structural
   {
     public static void RunAdapter()
     {
-      IMyRemoteDesktop psaLots = new MyRemoteDestopWrapper();
+      IMyRemoteDesktop psaLots = new MyRemoteDesktopWrapper();
       psaLots.IpAddress = "10.10.10.10";
       psaLots.InitiateConnection();
       psaLots.LookIntoDesktop();

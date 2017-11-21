@@ -2,7 +2,7 @@
 
 namespace DesignPattern.Creational
 {
-  public interface ICloneable<T>
+  public interface ICloneable<out T>
   {
     T Clone();
   }
@@ -18,15 +18,11 @@ namespace DesignPattern.Creational
     public string OwnerName { get; }
     public string Samples { get; }
 
-    #region ICloneable Members
-
     public DnaSample Clone()
     {
       var cloneDna = new DnaSample(OwnerName, Samples);
       return cloneDna;
     }
-
-    #endregion
   }
 
   public abstract class DnaTest

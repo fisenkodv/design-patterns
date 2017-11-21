@@ -1,69 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.FlyingLogic" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.FlyingLogic" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.69" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.FloatingLogic" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.FloatingLogic" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="1.169" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.RunningLogic" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="2.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.RunningLogic" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.106" />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Vechicle">
-    <Position X="2.75" Y="0.5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Vehicle" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Algorithm" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Helicoptor">
-    <Position X="4.75" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Helicopter" Collapsed="true">
+    <Position X="7" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Boat">
-    <Position X="0.75" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Boat" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.Car">
-    <Position X="2.75" Y="2.75" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.Car" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LearningMahesh.StudyDesignPattern.Behaviourial.StrategyProgram">
-    <Position X="2.75" Y="5" Width="1.5" />
+  <Class Name="DesignPattern.Behaviourial.StrategyProgram" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="LearningMahesh.StudyDesignPattern.Behaviourial.IAlgorithm">
-    <Position X="7.75" Y="1" Width="2.75" />
+  <Interface Name="DesignPattern.Behaviourial.IAlgorithm" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Behaviourial\Strategy.cs</FileName>

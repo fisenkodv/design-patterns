@@ -136,7 +136,7 @@ namespace DesignPattern.Behaviourial
 
     public override bool Approve(ReImbursement reImbursement)
     {
-      if ((reImbursement.Amount >= LowerThreshold) && (reImbursement.Amount <= UpperThreshold))
+      if (reImbursement.Amount >= LowerThreshold && reImbursement.Amount <= UpperThreshold)
       {
         reImbursement.IsApproved = true;
         reImbursement.ApprovedLevel = Level;

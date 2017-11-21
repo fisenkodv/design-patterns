@@ -6,15 +6,7 @@ namespace DesignPattern.Creational
   {
     private static Configuration _configuration;
 
-    public static Configuration Default
-    {
-      get
-      {
-        if (null == _configuration)
-          _configuration = new Configuration();
-        return _configuration;
-      }
-    }
+    public static Configuration Default => _configuration ?? (_configuration = new Configuration());
 
     public string UserId { private get; set; }
     public string Password { private get; set; }

@@ -73,11 +73,11 @@ namespace DesignPattern.Creational
     }
   }
 
-  public class Cashier /* Director to Construct Object */
+  public class Cashier
   {
     public void PlaceOrder(DominosFoodItem foodItem)
     {
-      if (null != foodItem)
+      if (foodItem != null)
       {
         foodItem.TakeOrder(); // Step-1
         foodItem.ProcessOrder(); // Step-2

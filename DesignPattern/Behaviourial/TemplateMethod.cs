@@ -10,8 +10,8 @@ namespace DesignPattern.Behaviourial
       Key = key;
     }
 
-    public string Key { get; protected set; }
-    public string Text { get; protected set; }
+    public string Key { get; }
+    public string Text { get; }
 
     public abstract void EncryptText();
   }

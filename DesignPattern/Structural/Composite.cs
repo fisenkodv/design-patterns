@@ -9,14 +9,14 @@ namespace DesignPattern.Structural
     string Department { get; set; }
     string Designation { get; set; }
 
-    bool AddReportees(IEmployee employee);
-    bool RemoveReportees(IEmployee employee);
+    bool AddSubordinate(IEmployee employee);
+    bool RemoveSubordinate(IEmployee employee);
     void Display(int level);
   }
 
   public class Branch : IEmployee
   {
-    private readonly IList<IEmployee> _reportees = new List<IEmployee>();
+    private readonly IList<IEmployee> _subordinates = new List<IEmployee>();
 
     public Branch(string name, string designation, string department)
     {
@@ -31,25 +31,26 @@ namespace DesignPattern.Structural
 
     public string Designation { get; set; }
 
-    public bool AddReportees(IEmployee employee)
+    public bool AddSubordinate(IEmployee employee)
     {
-      _reportees.Add(employee);
+      _subordinates.Add(employee);
       return true;
     }
 
-    public bool RemoveReportees(IEmployee employee)
+    public bool RemoveSubordinate(IEmployee employee)
     {
-      return _reportees.Remove(employee);
+      return _subordinates.Remove(employee);
     }
 
     public void Display(int level)
     {
-      var empDisp = new string('-', level) + Name + " (" + Designation + ") [Dept: " + Designation + "]";
-      Console.WriteLine(empDisp);
+      Console.WriteLine($"{new string('-', level)}{Name} ({Designation}) [Dept: {Department}]");
 
       level += 3;
-      foreach (var emp in _reportees)
-        emp.Display(level);
+      foreach (var subordinate in _subordinates)
+      {
+        subordinate.Display(level);
+      }
     }
   }
 
@@ -68,14 +69,14 @@ namespace DesignPattern.Structural
 
     public string Designation { get; set; }
 
-    public bool AddReportees(IEmployee employee)
+    public bool AddSubordinate(IEmployee employee)
     {
-      throw new NotImplementedException("Invalid Leaf Operation: AddReportees().");
+      throw new NotImplementedException("Invalid Leaf Operation: AddSubordinate().");
     }
 
-    public bool RemoveReportees(IEmployee employee)
+    public bool RemoveSubordinate(IEmployee employee)
     {
-      throw new NotImplementedException("Invalid Leaf Operation: RemoveReportees().");
+      throw new NotImplementedException("Invalid Leaf Operation: RemoveSubordinate().");
     }
 
     public void Display(int level)
@@ -96,13 +97,13 @@ namespace DesignPattern.Structural
       IEmployee srSoftEng = new Leaf("Ted", "Sr. Software Engineer", "GSE");
       IEmployee softEng = new Leaf("Tim", "Software Engineer", "GSE");
 
-      srTechSpec1.AddReportees(srSoftEng);
-      srTechSpec2.AddReportees(softEng);
+      srTechSpec1.AddSubordinate(srSoftEng);
+      srTechSpec2.AddSubordinate(softEng);
 
-      manager.AddReportees(srTechSpec1);
-      manager.AddReportees(srTechSpec2);
+      manager.AddSubordinate(srTechSpec1);
+      manager.AddSubordinate(srTechSpec2);
 
-      director.AddReportees(manager);
+      director.AddSubordinate(manager);
       director.Display(1);
     }
   }

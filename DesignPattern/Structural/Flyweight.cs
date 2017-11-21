@@ -29,7 +29,7 @@ namespace DesignPattern.Structural
 
   public static class AddressFlyweight
   {
-    public static Address Address = new Address
+    public static readonly Address Address = new Address
     {
       CompanyName = "Apple Inc.",
       Building = "Apple Store",

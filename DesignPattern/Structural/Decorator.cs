@@ -22,13 +22,10 @@ namespace DesignPattern.Structural
       return _description;
     }
 
-    public double Cost
-    {
-      get { return 450.0; }
-    }
+    public double Cost => 450.0;
   }
 
-  public abstract class PizzaTopings : IPizza
+  public abstract class PizzaToppings : IPizza
   {
     protected IPizza Pizza;
 
@@ -37,17 +34,14 @@ namespace DesignPattern.Structural
     public abstract string Description();
   }
 
-  public class ExtraSoya : PizzaTopings
+  public class ExtraSoya : PizzaToppings
   {
     public ExtraSoya(IPizza pizza)
     {
       Pizza = pizza;
     }
 
-    public override double Cost
-    {
-      get { return Pizza.Cost + 50; }
-    }
+    public override double Cost => Pizza.Cost + 50;
 
     public override string Description()
     {
@@ -55,17 +49,14 @@ namespace DesignPattern.Structural
     }
   }
 
-  public class ExtraCheese : PizzaTopings
+  public class ExtraCheese : PizzaToppings
   {
     public ExtraCheese(IPizza pizza)
     {
       Pizza = pizza;
     }
 
-    public override double Cost
-    {
-      get { return Pizza.Cost + 75; }
-    }
+    public override double Cost => Pizza.Cost + 75;
 
     public override string Description()
     {
@@ -73,17 +64,14 @@ namespace DesignPattern.Structural
     }
   }
 
-  public class ExtraTomatoAndOnion : PizzaTopings
+  public class ExtraTomatoAndOnion : PizzaToppings
   {
     public ExtraTomatoAndOnion(IPizza pizza)
     {
       Pizza = pizza;
     }
 
-    public override double Cost
-    {
-      get { return Pizza.Cost + 90; }
-    }
+    public override double Cost => Pizza.Cost + 90;
 
     public override string Description()
     {
