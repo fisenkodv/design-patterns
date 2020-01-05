@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/fisenkodv/designpatterns.svg?branch=master)](https://travis-ci.org/fisenkodv/designpatterns)
-
-# INTRODUCTION
+# INTRODUCTION [![Build Status](https://travis-ci.org/fisenkodv/designpatterns.svg?branch=master)](https://travis-ci.org/fisenkodv/designpatterns)
 Below you can find three basic classifications of patterns: Creational, Structural, and Behavioral.
 
 # TYPES OF DESIGN PATTERN
